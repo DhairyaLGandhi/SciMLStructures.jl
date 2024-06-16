@@ -20,7 +20,7 @@ function (re::NTRepack)(x::AbstractVector)
 end
 
 function canonicalize(::Tunable, nt::NamedTuple)
-    nt, NTRepack(nt), false
+    ComponentVector(nt), NTRepack(nt), false
 end
 
 canonicalize(::Constants, p::NamedTuple) = nothing, nothing, nothing

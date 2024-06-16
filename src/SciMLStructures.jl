@@ -2,6 +2,7 @@ module SciMLStructures
 
 import Functors
 using DataStructures: OrderedDict
+using ComponentArrays: ComponentVector
 
 include("interface.jl")
 include("array.jl")
